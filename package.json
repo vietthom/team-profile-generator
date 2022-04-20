@@ -1,5 +1,27 @@
 {
   "dependencies": {
     "inquirer": "^8.2.2"
-  }
+  },
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vietthom/team-profile-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vietthom/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/vietthom/team-profile-generator#readme",
+  "description": ""
 }
