@@ -17,20 +17,20 @@ const generateManager =(manager)=>{
 `;
 };
 
-const generateDeveloper = (developer) => {
+const generateEngineer = (engineer) => {
     return`
     <div class="card" style="width: 18rem;">
         <div class="card-header">
-            <h5 class="card-title" style="color: white;">${developer.name}</h5>
+            <h5 class="card-title" style="color: white;">${engineer.name}</h5>
             <div class="position">
                 <i class="fas fa-glasses"></i>
-                <h6 class="card-subtitle mb-2" style="color: white;">Junior Developer</h6>
+                <h6 class="card-subtitle mb-2" style="color: white;">Engineer</h6>
             </div>
         </div>
         <div class="card-body">                 
-            <p class="id">ID: ${developer.id}</p>
-            <p class="email">Email: <a href="mailto:${developer.email}">${developer.email}</a></p>
-            <p class="github">Github: <a href="https://github.com/${developer.github}">${developer.github}</a></p>
+            <p class="id">ID: ${engineer.id}</p>
+            <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+            <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
         </div>
     </div>
     `;
@@ -49,7 +49,7 @@ const generateIntern = (intern)=>{
         <div class="card-body">                 
             <p class="id">ID: ${intern.id}</p>
             <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
-            <p class="github">Github: <a href="https://github.com/${intern.github}">${intern.github}</a></p>
+            <p class="school">School: ${intern.school}</p>
         </div>                
     </div>
     `;
@@ -68,8 +68,8 @@ generateHTML = (data) =>{
             pageArray.push(managerCard);
         }
 
-        if(role === 'Developer'){
-            const developerCard = generateDeveloper(employee);
+        if(role === 'Engineer'){
+            const developerCard = generateEngineer(employee);
 
             pageArray.push(developerCard);
         }

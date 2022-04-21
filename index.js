@@ -1,8 +1,8 @@
 const generateHTML = require('./src/generateHTML');
 
-const Manager = require('./Models/Manager');
-const Developer = require('./Models/Developer');
-const Intern = require('./Models/Intern');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
 
 const fs = require('fs');
 const inquirer = require('inquirer');
@@ -85,7 +85,7 @@ const addEmployee = ()=>{
             type: 'list',
             name: 'role', 
             message: "Please choose your employees",
-            choices: ['Developer', 'Intern']
+            choices: ['Engineer', 'Intern']
         },
         {
             type: 'input',
@@ -131,7 +131,7 @@ const addEmployee = ()=>{
             type: 'input',
             name: 'github',
             message: "Please enter the employee's github username.",
-            when: (input) => input.role === "Developer",
+            when: (input) => input.role === "Engineer",
             validate: nameInput => {
                 if (nameInput ) {
                     return true;
@@ -164,8 +164,8 @@ const addEmployee = ()=>{
         let {name, id, email, role, github, school, confirmAddEmployee} = employeeData;
         let employee;
 
-        if(role === 'Developer'){
-            employee = new Developer (name, id, email, github);
+        if(role === 'Engineer'){
+            employee = new Engineer (name, id, email, github);
             console.log(employee);
         }else if (role === 'Intern'){
             employee = new Intern (name, id, email, school);

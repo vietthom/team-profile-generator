@@ -1,4 +1,4 @@
-const Intern = require('../Models/Intern');
+const Intern = require('../lib/Intern');
 
 test('creates an intern object', ()=>{
     const intern = new Intern('Thom', 1, 'thom@gmail.com', 'UVM');
