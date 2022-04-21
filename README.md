@@ -4,8 +4,8 @@
 This is a Node.js command-line application that utilizes the Inquirer module to dynamically create a team profile from user input data.
 
 ## Table of Contents
-*[Installation](#installation)
-*[Usage](#usage)
+* [Installation](#installation)
+* [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
@@ -15,8 +15,8 @@ This is a Node.js command-line application that utilizes the Inquirer module to 
 The user should clone the repository from GitHub and download Node. This application also requires a file system and inquirer module. If testing is required, this application uses Jest. 
 
 ## Usage
-Use inquirer from the command line to answer questions about your team. 
-View walkthrough video here (https://youtu.be/YG6fI2XAZbc)
+Use inquirer from the command line to answer questions about your team. <br>
+View walkthrough video here https://youtu.be/YG6fI2XAZbc
 <img src="./assets/images/teamsample.PNG">
 
 ## License 
