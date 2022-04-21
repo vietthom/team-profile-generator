@@ -1,8 +1,8 @@
 const generateHTML = require('./src/generateHTML');
 
-const Manager = require('./lib/Manager');
-const Developer = require('./lib/Developer');
-const Intern = require('./lib/Intern');
+const Manager = require('./Models/Manager');
+const Developer = require('./Models/Developer');
+const Intern = require('./Models/Intern');
 
 const fs = require('fs');
 const inquirer = require('inquirer');
